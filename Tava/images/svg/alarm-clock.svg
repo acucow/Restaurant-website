@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25.04" viewBox="0 0 25 25.04">
+    <defs>
+        <style>
+            .cls-1{fill:#c3c3c3}
+        </style>
+    </defs>
+    <g id="alarm-clock" transform="translate(-.378 .001)">
+        <g id="Group_257" transform="translate(3.021 3.576)">
+            <g id="Group_256">
+                <path id="Path_566" d="M67.759 84.874a9.838 9.838 0 1 0-14.205 0L51 88.281a.894.894 0 0 0 1.431 1.073l2.477-3.3a9.765 9.765 0 0 0 11.5 0l2.477 3.3a.894.894 0 1 0 1.431-1.073zm-7.1 1.261a8.049 8.049 0 1 1 8.049-8.049 8.058 8.058 0 0 1-8.052 8.049z" class="cls-1" transform="translate(-50.819 -68.249)"/>
+            </g>
+        </g>
+        <g id="Group_259" transform="translate(.378 .038)">
+            <g id="Group_258">
+                <path id="Path_567" d="M7.971 2.016a4.472 4.472 0 0 0-6.323 6.323.894.894 0 0 0 1.265 0l5.058-5.058a.894.894 0 0 0 0-1.265zM2.388 6.334a2.683 2.683 0 0 1 3.577-3.577z" class="cls-1" transform="translate(-.378 -.746)"/>
+            </g>
+        </g>
+        <g id="Group_261" transform="translate(17.484 -.001)">
+            <g id="Group_260">
+                <path id="Path_568" d="M333.412 1.308a4.471 4.471 0 0 0-6.323 0 .894.894 0 0 0 0 1.265l5.058 5.058a.894.894 0 0 0 1.265 0 4.471 4.471 0 0 0 0-6.323zm-.738 4.32L329.1 2.05a2.74 2.74 0 0 1 3.054.525 2.683 2.683 0 0 1 .52 3.054z" class="cls-1" transform="translate(-326.828 .001)"/>
+            </g>
+        </g>
+        <g id="Group_263" transform="translate(9.281 7.153)">
+            <g id="Group_262">
+                <path id="Path_569" d="M173.865 136.515a.894.894 0 0 0-.894.894v5.068l-2.5 3.338a.894.894 0 0 0 1.431 1.073l2.683-3.577a.894.894 0 0 0 .179-.537v-5.366a.894.894 0 0 0-.899-.893z" class="cls-1" transform="translate(-170.288 -136.515)"/>
+            </g>
+        </g>
+    </g>
+</svg>

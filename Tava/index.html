@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="/css/style.css">
+   <title>TAVA</title>
+</head>
+
+<body>
+
+   <!-------------Home-Page------------->
+   <div class=" home-page">
+
+      <!-------------header------------->
+
+      <header>
+
+         <!-------------Navbar------------->
+
+
+         <nav id="navbar" class="navbar navbar-expand-xl navbar-dark align-items-start  bg-transparent contact-navbar">
+            <a class="navbar-brand" href="index.html">
+               <img class="img mt-3 ml-4 logo-png" src="/images/icon/Logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse mr-2 mt-4" id="navbarNav">
+               <ul class="navbar-nav  ml-auto">
+                  <li class="nav-item active mr-4">
+                     <a class="nav-link" href="index.html">HOME PAGE <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active mr-4 ">
+                     <a class="nav-link" href="menu.html">MENU</a>
+                  </li>
+                  <li class="nav-item active mr-4 ">
+                     <a class="nav-link" href="about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item active mr-4">
+                     <a class="nav-link" href="reservations.html">RESERVATIONS</a>
+                  </li>
+                  <li class="nav-item active mr-4">
+                     <a class="nav-link" href="#">DELIVERY</a>
+                  </li>
+                  <li class="nav-item active mr-4">
+                     <a class="nav-link" href="#">PICKUP</a>
+                  </li>
+                  <li class="nav-item active mr-4">
+                     <a class="nav-link" href="gallery.html">GALLERY</a>
+                  </li>
+                  <li class="nav-item active mr-4">
+                     <a class="nav-link" href="#">FIND US ON YELP</a>
+                  </li>
+                  <li class="nav-item active mr-4">
+                     <a class="nav-link" href="contact.html">CONTACT</a>
+                  </li>
+                  <li class="nav-item active mr-4">
+                     <a class="nav-link" href="#">ORDER CATERING</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <!-------------Turkish food- Restaurant Menu------------->
+
+         <div class="container-fluid d-flex justify-content-end turkish-section">
+            <div class="row">
+               <div class="col my-col md-mx-5 py-5 my-5 px-5">
+                  <h3 class="text-white turkish">Turkish Food</h3>
+                  <h1 class="text-white restaurant">restaurant</h1>
+                  <a class="text-white" href="#menuu"><button class="btn bg-danger text-center menu"> MENU </button></a>
+               </div>
+            </div>
+         </div>
+
+         <!-------------Twitter/facebook/instagram------------->
+
+         <div class="container-fluid d-flex justify-content-end container-logo ">
+            <div class="row">
+               <div class="col-12  ">
+                  <img class="twitter-2" src="/images/icon/twitter-2.png" alt="">
+               </div>
+               <div class="col-12 ">
+                  <img class="logo" src="/images/icon/insta-logo.png" alt="">
+               </div>
+               <div class="col-12 ">
+                  <img class="facebook" src="/images/icon/facebook.png" alt="">
+               </div>
+            </div>
+         </div>
+
+         <!-------------Book Now------------->
+         <div class="container-fluid book">
+            <div class="row">
+               <div class="col-6 bg-danger d-flex justify-content-center px-0 align-items-center book-now1">
+                  <h1 id="book-now" class="text-white book-now">BOOK NOW</h1>
+               </div>
+               <div class="col-6 bg-light d-flex justify-content-center px-0 align-items-center book-now2">
+                  <h1 id="location" class="text-danger location">LOCATION</h1>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section class="booknow-hide">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-7 col-6">
+                  <form id="contact-form" method="post" action="contact.php" role="form">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="form-group">
+                              <label class="text-danger" for="form_name">Date</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Day *"
+                                 required="required" data-error="Firstname is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="form-group mt-2">
+                              <label for="form_lastname"></label>
+                              <input id="form_lastname" type="text" name="surname" class="form-control"
+                                 placeholder="Month *" required="required" data-error="Lastname is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="form-group mt-2">
+                              <label for="form_lastname"></label>
+                              <input id="form_lastname" type="text" name="surname" class="form-control"
+                                 placeholder="Year *" required="required" data-error="Lastname is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="form-group">
+                              <label class="text-danger" for="form_name">Time</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="19:00 *"
+                                 required="required" data-error="Firstname is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="form-group">
+                              <label class="text-danger" for="form_lastname">Party</label>
+                              <input id="form_lastname" type="text" name="surname" class="form-control"
+                                 placeholder="3 *" required="required" data-error="Lastname is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+
+
+               <div class="col-lg-5 col-6">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="form-group">
+                           <label class="text-danger" for="form_name">Contact&nbsp;Details</label>
+                           <input id="form_name" type="text" name="name" class="form-control"
+                              placeholder=" Name - Surname *" required="required" data-error="Firstname is required.">
+                           <div class="help-block with-errors"></div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="form-group mt-2">
+                           <label for="form_lastname"></label>
+                           <input id="form_lastname" type="text" name="surname" class="form-control"
+                              placeholder=" Phone *" required="required" data-error="Lastname is required.">
+                           <div class="help-block with-errors"></div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="form-group mt-2">
+                           <label for="form_lastname"></label>
+                           <input id="form_lastname" type="text" name="surname" class="form-control"
+                              placeholder=" E-Mail *" required="required" data-error="Lastname is required.">
+                           <div class="help-block with-errors"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 ">
+                  <input type="submit" class="btn btn-white border-dark btn-send" value="Request Booking">
+               </div>
+            </div>
+            </form>
+
+         </div>
+
+      </section>
+      <!-----------------Location-2----------------->
+      <section class="location-hide">
+         <div class="container-fluid mt-5 ">
+            <div class="row text-center">
+               <div class="col">
+                  <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                     <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+      <!-------------Section------------->
+
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <p id="menuu" class="menu2 display-1">MENU</p>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row text-center">
+               <div class="col-6   menu-section col-sm-3 icon1 " id="soups">
+                  <p id="soup" class=" text-center  menu-name">Soups</p>
+               </div>
+               <div class="col-6  menu-section col-sm-3 icon2 " id="mainCourses">
+                  <p id="mainCourse" class="text-center menu-name">Main Courses</p>
+               </div>
+               <div class="col-6  menu-section col-sm-3 icon3" id="salads">
+                  <p id="salad" class="text-center  menu-name">Salads</p>
+               </div>
+               <div class="col-6  menu-section col-sm-3 icon4" id="appetizers">
+                  <p id="appetizer" class="text-center menu-name">Appetizerss</p>
+               </div>
+            </div>
+         </div>
+         <div class="Collapse_soups hidden">
+            <div class="container  d-flex justify-content-center">
+               <div class="row">
+                  <div class="col-sm-4 col-12">
+                     <img id="containerr" src="/images/img/irina-89UsTc5bjsw-unsplash.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-4 col-12">
+                     <img src="/images/img/nathalie-jolie-inJF419mrPE-unsplash.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-4 col-12 ">
+                     <img src="/images/img/ella-olsson-fxJTl_gDh28-unsplash.jpg" class="w-100" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col text-danger">
+                     <p class="food-sections-names">Soups</p>
+                  </div>
+               </div>
+            </div>
+            <div class="container ">
+               <div class="row ">
+                  <div class="col-md-6 col-12 ">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex justify-content-start">
+                              <p class="food-name">RIB EYE STEAK</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$25</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3">
+                              <p class="text-muted point"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">16oz Ribeye steak grilled to perfection served with mashed
+                                 potato and asparagus</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">CHICKEN SAUTEE</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$25</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Chunks of chicken sauteed with onions, mushrooms green
+                                 peppers, tomatoes and oregano served with rice</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">KOFTE KEBAB</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$18</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Mixture of ground beef & lamb seasoned with peppers
+                                 tomatoes & special herbs served with rice & piyaz salad</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">MIXED GRILLED</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$9</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Gyro, chicken shish kebab, beef shish, adana kebab and
+                                 kofte served with rice and green salad</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">SULTAN’S DELIGHT</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$38</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-start  ">
+                              <p class="text-muted food-info">Pieces of lamb served on a bed of smoked eggplant in heavy
+                                 cream</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row ">
+                           <div class="col-10 d-flex  justify-content-start ">
+                              <p class="food-name ">CHICKEN GYRO(MONDAY-THURSDAY)</p>
+                           </div>
+                           <div class="col-2 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$21</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  my-n3">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Layers of marinated chicken thighs wrapped around the
+                                 vertical split grilled in front of charcoal fire served with rice and mixed greens</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="Collapse_mainCourses hidden">
+            <div class="container  d-flex justify-content-center">
+               <div class="row">
+                  <div class="col-sm-4 col-12">
+                     <img src="/images/img/jonathan.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-4 col-12">
+                     <img src="/images/img/nathalie-jolie-inJF419mrPE-unsplash.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-4 col-12 ">
+                     <img src="/images/img/ella-olsson-fxJTl_gDh28-unsplash.jpg" class="w-100" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col text-danger">
+                     <p class="food-sections-names">Main Courses</p>
+                  </div>
+               </div>
+            </div>
+            <div class="container ">
+               <div class="row ">
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex justify-content-start">
+                              <p class="food-name">RIB EYE STEAK</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$25</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">16oz Ribeye steak grilled to perfection served with mashed
+                                 potato and asparagus</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">CHICKEN SAUTEE</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$25</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Chunks of chicken sauteed with onions, mushrooms green
+                                 peppers, tomatoes and oregano served with rice</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">KOFTE KEBAB</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$18</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Mixture of ground beef & lamb seasoned with peppers
+                                 tomatoes & special herbs served with rice & piyaz salad</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">MIXED GRILLED</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$9</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Gyro, chicken shish kebab, beef shish, adana kebab and
+                                 kofte served with rice and green salad</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">SULTAN’S DELIGHT</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$38</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-start  ">
+                              <p class="text-muted food-info">Pieces of lamb served on a bed of smoked eggplant in heavy
+                                 cream</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row ">
+                           <div class="col-10 d-flex  justify-content-start ">
+                              <p class="food-name ">CHICKEN GYRO(MONDAY-THURSDAY)</p>
+                           </div>
+                           <div class="col-2 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$21</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  my-n3">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Layers of marinated chicken thighs wrapped around the
+                                 vertical split grilled in front of charcoal fire served with rice and mixed greens</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="Collapse_salads hidden">
+            <div class="container  d-flex justify-content-center">
+               <div class="row">
+                  <div class="col-sm-4 col-12">
+                     <img src="/images/img/irina-89UsTc5bjsw-unsplash.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-4 col-12">
+                     <img src="/images/img/nathalie-jolie-inJF419mrPE-unsplash.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-4 col-12 ">
+                     <img src="/images/img/ella-olsson-fxJTl_gDh28-unsplash.jpg" class="w-100" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col text-danger">
+                     <p class="food-sections-names">Salads</p>
+                  </div>
+               </div>
+            </div>
+            <div class="container ">
+               <div class="row ">
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex justify-content-start">
+                              <p class="food-name">RIB EYE STEAK</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$25</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">16oz Ribeye steak grilled to perfection served with mashed
+                                 potato and asparagus</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">CHICKEN SAUTEE</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$25</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Chunks of chicken sauteed with onions, mushrooms green
+                                 peppers, tomatoes and oregano served with rice</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">KOFTE KEBAB</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$18</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Mixture of ground beef & lamb seasoned with peppers
+                                 tomatoes & special herbs served with rice & piyaz salad</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">MIXED GRILLED</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$9</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Gyro, chicken shish kebab, beef shish, adana kebab and
+                                 kofte served with rice and green salad</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">SULTAN’S DELIGHT</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$38</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-start  ">
+                              <p class="text-muted food-info">Pieces of lamb served on a bed of smoked eggplant in heavy
+                                 cream</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row ">
+                           <div class="col-10 d-flex  justify-content-start ">
+                              <p class="food-name ">CHICKEN GYRO(MONDAY-THURSDAY)</p>
+                           </div>
+                           <div class="col-2 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$21</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  my-n3">
+                              <p class="text-muted point">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Layers of marinated chicken thighs wrapped around the
+                                 vertical split grilled in front of charcoal fire served with rice and mixed greens</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="Collapse_appetizers hidden">
+            <div class="container  d-flex justify-content-center">
+               <div class="row">
+                  <div class="col-sm-4 col-12">
+                     <img src="/images/img/irina-89UsTc5bjsw-unsplash.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-4 col-12">
+                     <img src="/images/img/nathalie-jolie-inJF419mrPE-unsplash.jpg" class="w-100" alt="">
+                  </div>
+                  <div class="col-sm-4 col-12 ">
+                     <img src="/images/img/ella-olsson-fxJTl_gDh28-unsplash.jpg" class="w-100" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col text-danger">
+                     <p class="food-sections-names">Appetizers</p>
+                  </div>
+               </div>
+            </div>
+            <div class="container ">
+               <div class="row ">
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex justify-content-start">
+                              <p class="food-name">RIB EYE STEAK</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$25</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3">
+                              <p class="text-muted">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">16oz Ribeye steak grilled to perfection served with mashed
+                                 potato and asparagus</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">CHICKEN SAUTEE</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$25</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Chunks of chicken sauteed with onions, mushrooms green
+                                 peppers, tomatoes and oregano served with rice</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">KOFTE KEBAB</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$18</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Mixture of ground beef & lamb seasoned with peppers
+                                 tomatoes & special herbs served with rice & piyaz salad</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">MIXED GRILLED</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$9</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Gyro, chicken shish kebab, beef shish, adana kebab and
+                                 kofte served with rice and green salad</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-6 d-flex  justify-content-start  ">
+                              <p class="food-name ">SULTAN’S DELIGHT</p>
+                           </div>
+                           <div class="col-6 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$38</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center my-n3 ">
+                              <p class="text-muted">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-start  ">
+                              <p class="text-muted food-info">Pieces of lamb served on a bed of smoked eggplant in heavy
+                                 cream</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <div class="container">
+                        <div class="row ">
+                           <div class="col-10 d-flex  justify-content-start ">
+                              <p class="food-name ">CHICKEN GYRO(MONDAY-THURSDAY)</p>
+                           </div>
+                           <div class="col-2 d-flex justify-content-end">
+                              <p class="food-price  text-right ">$21</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  my-n3">
+                              <p class="text-muted">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+                           </div>
+                           <div class="col-12  d-flex justify-content-center  ">
+                              <p class="text-muted food-info">Layers of marinated chicken thighs wrapped around the
+                                 vertical split grilled in front of charcoal fire served with rice and mixed greens</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!-------------Section-1------------->
+      <div class="containe-fluid  cont lorem-place">
+         <div>
+            <h1 class="us">About us</h1>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-5 col-12 py-5 my-5">
+                  <h3 class="lead lorem">Loremipsum Dolor sit Amet Consectetur</h3>
+                  <br>
+                  <p class="lead ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper, est vitae
+                     dignissim posuere,
+                     enim mauris ultricies felis, ac interdum nisi nisl et ante. Nunc venenatis dapibus mattis.
+                     Suspendisse ac tristique mauris.
+                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                     Ut fermentum luctus enim, a porttitor lacus rhoncus ac. Praesent tristique quis dui ac rutrum.
+                     Nullam vulputate vitae sapien eget consequat.
+                     Mauris volutpat nisi velit, a pulvinar quam sagittis sit amet. Quisque tincidunt risus dui, id
+                     mollis erat ultricies in. Donec vitae sodales arcu.
+                     <br>
+                     <br>
+
+                     enim mauris ultricies felis, ac interdum nisi nisl et ante. Nunc venenatis dapibus mattis.
+                     Suspendisse ac tristique mauris.
+                     Pellentesque habitant morbi tristique senectus et netus et.
+                     <br>
+                     <br>
+
+                     Suspendisse ac tristique mauris. Pellentesque habitant morbi tristique senectus et netus et
+                     malesuada fames ac turpis egestas.</p>
+
+                  <p class="gordon">Gordon Ramsey</p>
+                  <p class="text-muted tava-restaurant">Tava Restaurant Executive Chef</p>
+               </div>
+               <div class="col-xl-7 col-12  text-left py-5 my-5">
+                  <div class="swiper-container">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <img src="/images/img/jonathan.jpg" width="500px" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="/images/img/sebastian.jpg" width="500px" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="/images/img/jonathan.jpg" width="500px" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                           <img src="/images/img/sebastian.jpg" width="500px" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <section class="section-2">
+         <div class="flex-container">
+
+            <div class="flex-slide home">
+
+               <div class="flex-title flex-title-home">OUR TEAM</div>
+               <div class="flex-about flex-about-home">
+                  <p class="lead">Loremipsum dolor sit amen consectetur
+                     Donec semper, est vitae dignissim posuere</p>
+               </div>
+            </div>
+            <div class="flex-slide about">
+               <div class="flex-title">OUR KITCHEN</div>
+               <div class="flex-about flex-about-home">
+                  <p class="lead">Loremipsum dolor sit amen consectetur
+                     Donec semper, est vitae dignissim posuere</p>
+               </div>
+            </div>
+            <div class="flex-slide work">
+               <div class="flex-title">OUR TEAM</div>
+               <div class="flex-about flex-about-home">
+                  <p class="lead">Loremipsum dolor sit amen consectetur
+                     Donec semper, est vitae dignissim posuere</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="section-3">
+            <div class="continer ">
+               <div class="col-sm-12 my-2 ">
+                  <h1 class="tava-restaurantt mt-5">TAVA RESTAURANT</h1>
+               </div>
+               <div class="col-sm-12 mt-4">
+                  <p class="my-n1 adress">318 5th Avenue</p>
+                  <p class="adress my-n1"> Brooklyn,New York,11215</p>
+                  <p class="adress ">Call to Reserve 718-499-5600T</p>
+               </div>
+               <div class="col-sm-12 my-n1">
+                  <p class=" baslik">HOURS</p>
+                  <p class="date my-n1">Monday to Friday - 11:00 am - 11:00 pm</p>
+                  <p class="date">Saturday to Sunday - 10:00 am - 11:00 pm</p>
+               </div>
+               <div class="col-sm-12 my-n1">
+                  <p class=" baslik">BRUNCH</p>
+                  <p class="date">Sunday - 10:00 am - 3:30 pm</p>
+               </div>
+               <div class="col-sm-12 my-n1">
+                  <p class=" baslik ">LUNCH SPECIAL</p>
+                  <p class="date "> Monday to Friday - 11: am 3:30 pm</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-12 d-flex justify-content-center py-4 footer">
+                  <img class="logo-png" src="/images/icon/Logo.png" alt="">
+               </div>
+               <div class="col-sm-12 d-flex justify-content-center  ">
+                  <p class="text-light address-info"> Tava Restaurant
+                  <p class="text-danger address-info"> / </p>
+                  <p class="text-light address-info"> 318 5th Avenue </p>
+                  <p class="text-danger address-info"> / </p>
+                  <p class="text-light address-info"> Brooklyn, New York, 11215 </p>
+                  <p class="text-danger address-info">/ 718-499-5600</p>
+                  </p>
+               </div>
+            </div>
+            <div class="col-sm-12 d-flex justify-content-center">
+               <img class="twitter-2  mx-3" src="/images/icon/twitter-2.png" alt="">
+               <img class="logo  mx-3" src="/images/icon/insta-logo.png" alt="">
+               <img class="facebook  mx-3" src="/images/icon/facebook.png" alt="">
+            </div>
+            <div class=" feather-icon-arrow">
+               <img onclick="topFunction()" id="i-arrow" title="Go to top" src="/images/icon/Icon-feather-arrow-up.png"
+                  alt="">
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="js/jquery-3.5.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
